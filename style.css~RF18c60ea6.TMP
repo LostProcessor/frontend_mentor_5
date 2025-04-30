@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.rose-background {
+    background-color: hsl(30, 38%, 92%);
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius:10px;
+    width:30em;
+    height:25em;
+    display: flex;
+    flex-direction:row;
+    margin: 20px;
+}
+
+.container img{
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+.other_part{
+    width: 50%;
+}
+
+button {
+    margin: 8% 8%;
+    display:flex-row;
+    background-color: hsl(158, 42%, 18%);
+    color:white;
+    width: 15em;
+    height: 3em;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    justify-items:center;
+}
+.image-button {
+    margin-left:-5em;
+    height: 1.5em; /* or try 16px for a small icon */
+    width: auto; /* maintain aspect ratio */
+    object-fit: contain; /* ensures it scales without stretching */
+    display: inline-block; /* optional: helps with spacing */
+}
+
+.price-related{
+    display:flex;
+    margin-left: 8%;
+}
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+}
+.old-price {
+    text-decoration: line-through;
+    padding: 1em;
+}
+.margin-left{
+    margin: 2% 8%;
+}
+h3, p {
+    color: hsl(228, 12%, 48%);
+}
+h3 {
+    margin-left:5px;
+    font-weight:400;
+    font-family: 'Montserrat';
+}
+p {
+    font-family: Fraunces;
+    font-size: 14px;
+}
+h2 {
+   font-family:Montserrat;
+   color: hsl(212, 21%, 14%);
+}
+@media (max-width: 768px) {
+     .container{
+         width:95vw;
+         height:30em;
+         display:flex;
+         flex-direction:column;
+     }
+     .container img {
+        height: 70%;
+        width:90%; 
+        object-fit: cover;
+        margin:10px auto;
+        border-radius: 10px 10px 0 0;
+     }
+
+}
+
+
+
+
